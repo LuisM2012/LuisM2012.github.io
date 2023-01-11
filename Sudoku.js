@@ -186,7 +186,13 @@ class Sudoku
       for (let cell = 0; cell < 9; cell++)
       {
 				if (this.board[row*9+cell] == "") {
-					rowDiv += `<div class="cell scell_${cell} edit" contenteditable="true">${this.board[row*9+cell]}</div>`;
+					rowDiv += `<div class="cell scell_${cell}">\
+					<input class="edit" type="tel" id="phone" name="phone" size="1" maxlength="1" autocomplete="off" pattern="[0-9]{1}">\
+					</div>`;
+					// Different input types
+					// <input type="number" inputMode="numeric" pattern="[0-9]*" min="1" max="2112">\
+					// <input class="edit" type="number" id="quantity" name="quantity" min="1" max="9">\
+					// <input type="tel" id="phone" name="phone" pattern="[0-9]{1}">\
 				}
 				else {
 					rowDiv += `<div class="cell scell_${cell}">${this.board[row*9+cell]}</div>`;

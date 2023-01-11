@@ -177,21 +177,20 @@
 }
 
 .edit {
-  background-color: white;
-}
-
-.edit:hover {
-  background-color:aquamarine;
-}
-
-.edit:focus {
-  outline:none;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background-color: black;
+  border: greenyellow solid 1px;
+  color: greenyellow;
+  font-size: 20px;
+  text-align: center;
 }
 
 .row_2, .row_5 {
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid black;
 }
 
 .scell_3, .scell_6 {
-  border-left: 2px solid black;
+  border-left: 4px solid black;
 }
