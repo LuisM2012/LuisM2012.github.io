@@ -15,7 +15,7 @@ html
 body 
 {
   height: 100vh;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 main {
@@ -228,23 +228,37 @@ h3 {
 .imageMe {
   width: 300px;
   height: 300px;
+  transition: transform 1s;
 }
 
 .contact {
   align-items: center;
   justify-items: center;
   text-align: center;
+  margin-bottom: 60px;
 }
 .contact h2 {
   margin-bottom: 20px;
 }
-
+.contact-button {
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  color: rgb(79, 251, 63);
+  background-color: black;
+  border: 1px solid rgb(79, 251, 63);
+  border-radius: 10px;
+}
+.contact-button:hover {
+  background-color: rgb(79, 251, 63);
+  color: black;
+}
 /* Animation Style Below */
 
-.imageMe:hover, .imageMe:active {
-  -moz-animation: picGrow 3s 1 linear forwards;
-  -webkit-animation: picGrow 3s 1 linear forwards;
-  animation: picGrow 3s 1 linear forwards;
+.imageMe:hover {
+  transform: scale(1.2);
 }
 
 nav {
@@ -288,31 +302,23 @@ nav {
 
 
 @keyframes backText1 {
-  0% {
-  }
   100% {
-    margin-top: 110vh;
+    margin-top: 110vmax;
   }
 }
 @keyframes backText2 {
-  0% {
-  }
   100% {
-    margin-top: 120vh;
+    margin-top: 120vmax;
   }
 }
 @keyframes backText3 {
-  0% {
-  }
   100% {
-    margin-top: 130vh;
+    margin-top: 130vmax;
   }
 }
 @keyframes backText4 {
-  0% {
-  }
   100% {
-    margin-top: 140vh;
+    margin-top: 140vmax;
   }
 }
 
@@ -331,15 +337,6 @@ nav {
   }
   100% {
     text-shadow: 0 0 25px greenyellow;
-  }
-}
-
-@keyframes picGrow {
-  0% {
-  }
-  100% {
-    width: 500px;
-    height: 500px;
   }
 }
 
