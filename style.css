@@ -8,8 +8,7 @@ html
 {
   overflow: hidden;
   scroll-behavior: smooth;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
   background-color: black;
 }
 
@@ -103,7 +102,8 @@ a:hover, a:active {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 300px;
+  width: 60vw;
+  min-width: 200px;
   overflow: scroll;
 }
 .nav-mobile .logo-div {
@@ -142,8 +142,8 @@ a:hover, a:active {
   right: 0;
   z-index: 100;
   float: right;
-  margin-top: 10px;
-  margin-right: 10px;
+  margin-top: 30px;
+  margin-right: 20px;
   cursor: pointer;
 }
 #nav-icon div {
@@ -172,19 +172,6 @@ a:hover, a:active {
 .noOver {
   overflow: hidden;
 }
-/* Background Style */
-
-#back-wrap {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -5;
-  display: flex;
-  flex-direction: row;
-  background-color: black;
-}
 
 /* Main Style */
 
@@ -198,10 +185,6 @@ h2 {
   text-shadow: 0 0 3px black, 0 0 10px rgb(79, 251, 63);
   font-size: 32px;
 }
-h3 {
-  padding: 1px;
-  position: relative;
-}
 
 .front 
 {
@@ -211,6 +194,9 @@ h3 {
   justify-content: center;
   height: 100vh;
   margin-bottom: 80px;
+}
+.front h1 {
+  text-align: center;
 }
 
 .about {
@@ -226,17 +212,62 @@ h3 {
 .about h1 {
   padding: 20px
 }
+.about h2 {
+  text-align: center;
+}
 .imageMe {
   width: 300px;
   height: 300px;
   transition: transform 1s;
 }
 
+.skills-info {
+  width: 100vw;
+  min-width: 350px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.skills-info h2 {
+  margin: 40px 5vw 20px 5vw;
+  padding: 10px 10px 5px 20px;
+  border-bottom: solid 2px white;
+  float: left;
+}
+.skills-info h4 {
+  margin: 5px 0px 15px 0px;
+  font-size: 20px;
+  color: aliceblue;
+  text-shadow: 0 0 25px greenyellow;
+  text-align: left;
+}
+.history-box {
+  width: 70%;
+  margin-right: 30px;
+}
+.skills-box {
+  margin: 10px 5vw;
+  display: flex;
+  flex-direction: row;
+}
+.circle {
+  height: 20px;
+  width: 20px;
+  margin: auto 10px;
+  border-radius: 10px;
+}
+.skills-info h3 {
+  margin: 5px 30px;
+  width: 21%;
+  font-size: 20px;
+  color: aliceblue;
+  text-shadow: 0 0 25px greenyellow;
+}
+
 .contact {
   align-items: center;
   justify-items: center;
   text-align: center;
-  margin-bottom: 100px;
 }
 .contact h2 {
   margin-bottom: 20px;
@@ -256,6 +287,18 @@ h3 {
   background-color: rgb(79, 251, 63);
   color: black;
 }
+.green {
+  background-color: rgb(79, 251, 63);
+  box-shadow: 0 0 15px whitesmoke;
+}
+.dim-green {
+  background-color: rgb(23, 93, 18);
+}
+
+.bottom-space {
+  height: 120px;
+}
+
 /* Animation Style Below */
 
 .imageMe:hover {
@@ -266,61 +309,6 @@ nav {
   -moz-animation: boxGlow 5s alternate-reverse infinite;
   -webkit-animation: boxGlow 5s alternate-reverse infinite;
   animation: boxGlow 5s alternate-reverse infinite;
-}
-
-.back-text1 {
-  -moz-animation: backText1 10s linear infinite;
-  -webkit-animation: backText1 10s linear infinite;
-  animation: backText1 10s linear infinite;
-  margin-top: -150px;
-  color: rgba(79, 251, 63, 0.455);
-  text-shadow: 0 0 4px rgba(79, 251, 63, 0.455);
-}
-.back-text2 {
-  -moz-animation: backText2 12s linear infinite;
-  -webkit-animation: backText2 12s linear infinite;
-  animation: backText2 12s linear infinite;
-  margin-top: -300px;
-  color: rgba(79, 251, 63, 0.87);
-  text-shadow: 0 0 4px rgba(79, 251, 63, 0.87);
-}
-.back-text3 {
-  -moz-animation: backText3 14s linear infinite;
-  -webkit-animation: backText3 14s linear infinite;
-  animation: backText3 14s linear infinite;
-  margin-top: -450px;
-  color: rgba(79, 251, 63, 0.237);
-  text-shadow: 0 0 4px rgba(79, 251, 63, 0.237);
-}
-.back-text4 {
-  -moz-animation: backText4 16s linear infinite;
-  -webkit-animation: backText4 16s linear infinite;
-  animation: backText4 16s linear infinite;
-  margin-top: -300px;
-  color: rgba(79, 251, 63, 0.619);
-  text-shadow: 0 0 4px rgba(79, 251, 63, 0.619);
-}
-
-
-@keyframes backText1 {
-  100% {
-    margin-top: 110vmax;
-  }
-}
-@keyframes backText2 {
-  100% {
-    margin-top: 120vmax;
-  }
-}
-@keyframes backText3 {
-  100% {
-    margin-top: 130vmax;
-  }
-}
-@keyframes backText4 {
-  100% {
-    margin-top: 140vmax;
-  }
 }
 
 @keyframes boxGlow {
@@ -349,7 +337,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
   .nav-mobile{
     display: none;
   }

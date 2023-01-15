@@ -7,6 +7,7 @@
     <title>Luis Morales</title>
     <link rel="icon" href="./image1.png">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./back-wrap.css">
     <link rel="stylesheet" href="./portfolio.css">
   </head>
   <body>
@@ -16,33 +17,41 @@
       <div class="logo-div"><a href="./">LM</a><h2 id="nav-x" onclick="closeNav()" class="hidden">X</h2></div>
       <div class="nav-links"><!--
       --><a href="./portfolio.html">Portfolio</a><!--
-      --><a class="resume" href="./resume.pdf">Resume</a><!--
+      --><a class="resume" href="./resume.pdf" target="_blank">Resume</a><!--
       --></div>
 		</nav>
     <nav class="nav-web">
       <div class="logo-div"><a href="./">LM</a></div>
       <div class="nav-links"><!--
       --><a href="/portfolio.html">Portfolio</a><!--
-      --><a class="resume" href="./resume.pdf">Resume</a><!--
+      --><a class="resume" href="./resume.pdf" target="_blank">Resume</a><!--
       --></div>
 		</nav>
     <main>
+			<h2 class="title-head">Work</h2>
+			<div class="card">Comming Soon</div>
+			<h2 class="title-head">Projects</h2>
 			<div class="project tic-tac-toe">
 				<h1>Tic-Tac-Toe</h1>
-				<div class="ttt-board"><!-- JavaScript --></div>
-				<h2 class="tttwinner"><!-- JavaScript --></h2>
+				<div class="board ttt-board"><!-- JavaScript --></div>
+				<h2 class="tttwinner">Playing...</h2>
 				<button onclick="tictactoe.reset_board()">RESET</button>
 			</div>
 			<div class="project sudoku">
 				<h1>Sudoku</h1>
-				<div class="sudoku-board"><!-- JavaScript --></div>
+				<div class="board sudoku-board"><!-- JavaScript --></div>
 				<button onclick="sudoku.generate()">Generate</button>
 			</div>
 			<div class="project mazes">
 				<h1>Mazes</h1>
-				<div class="maze-board"><!-- JavaScript --></div>
+				<div class="board maze-board"><!-- JavaScript --></div>
 				<button onclick="maze.generate()">Generate</button>
 			</div>
+			<div id="load-button" class="load" onclick="loadProjects()">Load More</div>
+			<div id="load-in" class="hidden">
+				<div class="card">Comming Soon</div>
+			</div>
+			<div class="bottom-space"></div>
 		</main>
     <script src="./index.js"></script>
     <script src="./TicTacToe.js"></script>

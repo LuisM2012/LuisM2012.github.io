@@ -64,7 +64,7 @@ class TicTacToe
         this.winner.innerText = "Player 1 Wins !!!";
         this.winner.classList.add("playerWin");
       } else {
-        this.winner.innerText = "Player 2 Wins!!!";
+        this.winner.innerText = "Computer Wins!!!";
         this.winner.classList.add("computerWin");
       }
       this.board_full = true;
@@ -169,7 +169,7 @@ class TicTacToe
     this.winner.classList.remove("playerWin");
     this.winner.classList.remove("computerWin");
     this.winner.classList.remove("draw");
-    this.winner.innerText = "";
+    this.winner.innerText = "Playing...";
     this.render_board();
   };
 
@@ -178,7 +178,7 @@ class TicTacToe
     this.board_container.innerHTML = "";
     this.board.forEach((e, i) => {
       this.board_container.innerHTML += `<div class="block cell_${i}" onclick="tictactoe.addPlayerMove(${i})">${this.board[i]}</div>`
-      if (e != "") {
+      if (e != "" || this.board_full) {
         document.querySelector(`.cell_${i}`).classList.add("occupied");
       }
     });

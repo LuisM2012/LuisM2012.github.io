@@ -1,0 +1,147 @@
+/* Background Style */
+
+#back-wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -5;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+#back-wrap h3 {
+  padding: 1px;
+  position: relative;
+}
+
+
+/* Animation Style */
+
+.back-text1 {
+  margin-top: -150px;
+  color: rgba(79, 251, 63, 0.455);
+  text-shadow: 0 0 4px rgba(79, 251, 63, 0.455);
+  -moz-animation: backText 20s linear infinite;
+  -webkit-animation: backText 20s linear infinite;
+  animation: backText 20s linear infinite;
+}
+.back-text2 {
+  margin-top: -300px;
+  color: rgba(79, 251, 63, 0.87);
+  text-shadow: 0 0 4px rgba(79, 251, 63, 0.87);
+  -moz-animation: backText 22s linear infinite;
+  -webkit-animation: backText 22s linear infinite;
+  animation: backText 22s linear infinite;
+}
+.back-text3 {
+  margin-top: -450px;
+  color: rgba(79, 251, 63, 0.237);
+  text-shadow: 0 0 4px rgba(79, 251, 63, 0.237);
+  -moz-animation: backText 24s linear infinite;
+  -webkit-animation: backText 24s linear infinite;
+  animation: backText 24s linear infinite;
+}
+.back-text4 {
+  margin-top: -300px;
+  color: rgba(79, 251, 63, 0.619);
+  text-shadow: 0 0 4px rgba(79, 251, 63, 0.619);
+  -moz-animation: backText 26s linear infinite;
+  -webkit-animation: backText 26s linear infinite;
+  animation: backText 26s linear infinite;
+}
+
+@keyframes backText {
+  100% {
+    margin-top: 110vmax;
+  }
+}
+@keyframes backText600 {
+  100% {
+    margin-top: 600px;
+  }
+}
+@keyframes backText1200 {
+  100% {
+    margin-top: 1200px;
+  }
+}
+@keyframes backText1800 {
+  100% {
+    margin-top: 1800px;
+  }
+}
+
+@media screen and (max-width: 600px),
+      screen and (max-height: 600px)
+{
+  .back-text1 {
+    -moz-animation: backText600 9s linear infinite;
+    -webkit-animation: backText600 9s linear infinite;
+    animation: backText600 9s linear infinite;
+  }
+  .back-text2 {
+    -moz-animation: backText600 6s linear infinite;
+    -webkit-animation: backText600 6s linear infinite;
+    animation: backText600 6s linear infinite;
+  }
+  .back-text3 {
+    -moz-animation: backText600 7s linear infinite;
+    -webkit-animation: backText600 7s linear infinite;
+    animation: backText600 7s linear infinite;
+  }
+  .back-text4 {
+    -moz-animation: backText600 8s linear infinite;
+    -webkit-animation: backText600 8s linear infinite;
+    animation: backText600 8s linear infinite;
+  }
+}
+@media screen and (max-width: 1200px),
+      screen and (max-height: 1200px)
+{
+  .back-text1 {
+    -moz-animation: backText1200 15s linear infinite;
+    -webkit-animation: backText1200 15s linear infinite;
+    animation: backText1200 15s linear infinite;
+  }
+  .back-text2 {
+    -moz-animation: backText1200 12s linear infinite;
+    -webkit-animation: backText1200 12s linear infinite;
+    animation: backText1200 12s linear infinite;
+  }
+  .back-text3 {
+    -moz-animation: backText1200 13s linear infinite;
+    -webkit-animation: backText1200 13s linear infinite;
+    animation: backText1200 13s linear infinite;
+  }
+  .back-text4 {
+    -moz-animation: backText1200 14s linear infinite;
+    -webkit-animation: backText1200 14s linear infinite;
+    animation: backText1200 14s linear infinite;
+  }
+}
+@media screen and (max-width: 1800px),
+      screen and (max-height: 1800px)
+{
+  .back-text1 {
+    -moz-animation: backText1800 21s linear infinite;
+    -webkit-animation: backText1800 21s linear infinite;
+    animation: backText1800 21s linear infinite;
+  }
+  .back-text2 {
+    -moz-animation: backText1800 18s linear infinite;
+    -webkit-animation: backText1800 18s linear infinite;
+    animation: backText1800 18s linear infinite;
+  }
+  .back-text3 {
+    -moz-animation: backText1800 19s linear infinite;
+    -webkit-animation: backText1800 19s linear infinite;
+    animation: backText1800 19s linear infinite;
+  }
+  .back-text4 {
+    -moz-animation: backText1800 20s linear infinite;
+    -webkit-animation: backText1800 20s linear infinite;
+    animation: backText1800 20s linear infinite;
+  }
+}
