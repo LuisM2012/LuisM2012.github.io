@@ -6,7 +6,7 @@
 
 html
 {
-  overflow: hidden;
+  /* overflow: hidden; */
   scroll-behavior: smooth;
   height: 100vh;
   background-color: black;
@@ -14,7 +14,7 @@ html
 
 body 
 {
-  overflow-y: auto;
+  /* overflow-y: auto; */
   scroll-behavior: smooth;
   height: 100vh;
 }
@@ -33,7 +33,7 @@ main {
   min-width: 300px;
   width: 100vw;
   display: flex;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1;
 }
@@ -95,17 +95,17 @@ a:hover, a:active {
 }
 
 .nav-mobile {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  z-index: 100;
+  z-index: 1;
   background-color: black;
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 60vw;
   min-width: 200px;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 .nav-mobile .logo-div {
   flex-direction: row;
@@ -138,7 +138,7 @@ a:hover, a:active {
 }
 
 #nav-icon {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 1;
@@ -336,13 +336,13 @@ nav {
   .nav-web{
     display: none;
   }
-  html{
-    overflow-y: auto;
-    background-color: aqua;
-  }
-  body {
-    overflow-y: auto;
-  }
+  /* html{ */
+    /* overflow-y: auto; */
+    /* background-color: aqua; */
+  /* } */
+  /* body { */
+    /* overflow-y: auto; */
+  /* } */
 }
 
 @media screen and (min-width: 601px) {
