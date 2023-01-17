@@ -140,7 +140,6 @@ a:hover, a:active {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 100;
   float: right;
   margin-top: 30px;
   margin-right: 20px;
@@ -334,6 +333,9 @@ nav {
 @media screen and (max-width: 600px) {
   .nav-web{
     display: none;
+  }
+  html{
+    overflow-y: auto;
   }
 }
 

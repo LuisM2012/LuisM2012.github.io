@@ -77,71 +77,71 @@
       screen and (max-height: 600px)
 {
   .back-text1 {
-    -moz-animation: backText600 9s linear infinite;
-    -webkit-animation: backText600 9s linear infinite;
-    animation: backText600 9s linear infinite;
+    -moz-animation: backText600 4s linear infinite;
+    -webkit-animation: backText600 4s linear infinite;
+    animation: backText600 4s linear infinite;
   }
   .back-text2 {
-    -moz-animation: backText600 6s linear infinite;
-    -webkit-animation: backText600 6s linear infinite;
-    animation: backText600 6s linear infinite;
+    -moz-animation: backText600 4.5s linear infinite;
+    -webkit-animation: backText600 4.5s linear infinite;
+    animation: backText600 4.5s linear infinite;
   }
   .back-text3 {
-    -moz-animation: backText600 7s linear infinite;
-    -webkit-animation: backText600 7s linear infinite;
-    animation: backText600 7s linear infinite;
+    -moz-animation: backText600 5s linear infinite;
+    -webkit-animation: backText600 5s linear infinite;
+    animation: backText600 5s linear infinite;
   }
   .back-text4 {
-    -moz-animation: backText600 8s linear infinite;
-    -webkit-animation: backText600 8s linear infinite;
-    animation: backText600 8s linear infinite;
+    -moz-animation: backText600 5.5s linear infinite;
+    -webkit-animation: backText600 5.5s linear infinite;
+    animation: backText600 5.5s linear infinite;
   }
 }
 @media screen and (max-width: 1200px),
       screen and (max-height: 1200px)
 {
   .back-text1 {
-    -moz-animation: backText1200 15s linear infinite;
-    -webkit-animation: backText1200 15s linear infinite;
-    animation: backText1200 15s linear infinite;
+    -moz-animation: backText1200 8s linear infinite;
+    -webkit-animation: backText1200 8s linear infinite;
+    animation: backText1200 8s linear infinite;
   }
   .back-text2 {
-    -moz-animation: backText1200 12s linear infinite;
-    -webkit-animation: backText1200 12s linear infinite;
-    animation: backText1200 12s linear infinite;
+    -moz-animation: backText1200 9s linear infinite;
+    -webkit-animation: backText1200 9s linear infinite;
+    animation: backText1200 9s linear infinite;
   }
   .back-text3 {
-    -moz-animation: backText1200 13s linear infinite;
-    -webkit-animation: backText1200 13s linear infinite;
-    animation: backText1200 13s linear infinite;
+    -moz-animation: backText1200 10s linear infinite;
+    -webkit-animation: backText1200 10s linear infinite;
+    animation: backText1200 10s linear infinite;
   }
   .back-text4 {
-    -moz-animation: backText1200 14s linear infinite;
-    -webkit-animation: backText1200 14s linear infinite;
-    animation: backText1200 14s linear infinite;
+    -moz-animation: backText1200 11s linear infinite;
+    -webkit-animation: backText1200 11s linear infinite;
+    animation: backText1200 11s linear infinite;
   }
 }
 @media screen and (max-width: 1800px),
       screen and (max-height: 1800px)
 {
   .back-text1 {
-    -moz-animation: backText1800 21s linear infinite;
-    -webkit-animation: backText1800 21s linear infinite;
-    animation: backText1800 21s linear infinite;
+    -moz-animation: backText1800 12s linear infinite;
+    -webkit-animation: backText1800 12s linear infinite;
+    animation: backText1800 12s linear infinite;
   }
   .back-text2 {
-    -moz-animation: backText1800 18s linear infinite;
-    -webkit-animation: backText1800 18s linear infinite;
-    animation: backText1800 18s linear infinite;
+    -moz-animation: backText1800 13s linear infinite;
+    -webkit-animation: backText1800 13s linear infinite;
+    animation: backText1800 13s linear infinite;
   }
   .back-text3 {
-    -moz-animation: backText1800 19s linear infinite;
-    -webkit-animation: backText1800 19s linear infinite;
-    animation: backText1800 19s linear infinite;
+    -moz-animation: backText1800 14s linear infinite;
+    -webkit-animation: backText1800 14s linear infinite;
+    animation: backText1800 14s linear infinite;
   }
   .back-text4 {
-    -moz-animation: backText1800 20s linear infinite;
-    -webkit-animation: backText1800 20s linear infinite;
-    animation: backText1800 20s linear infinite;
+    -moz-animation: backText1800 15s linear infinite;
+    -webkit-animation: backText1800 15s linear infinite;
+    animation: backText1800 15s linear infinite;
   }
 }
