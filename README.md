@@ -14,22 +14,25 @@
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
+
 • An image with descriptive alt attribute
 • Appropriate Headings and Paragraph Texts
 • Link to external page
 • Multiple pages with appropriate navigation
 
 (b) CSS features
+
 • padding and margins
 • link, text color, and background colors
 
 (c) Advanced features
+
 • Creating a navigation bar
 • leveraging nested selectors
 
 3. How long, in hours, did it take you to complete this assignment?
 
-15 hours
+20 hours
 
 4. What online resources did you consult when completing this assignment? (list specific URLs)
 
